@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Thea",
+    "role": "Project Manager",
+    "initials": "TD",
+    "bio": "Passionate about creating innovative web solutions and mentoring the next generation of developers.",
+    "avatar": "Thea.png"
+  },
+  {
+    "id": 2,
+    "name": "Angie",
+    "role": "Design Lead",
+    "initials": "AT",
+    "bio": "Hi, this is Angie!",
+    "avatar": "Angie.png"
+  }
+]

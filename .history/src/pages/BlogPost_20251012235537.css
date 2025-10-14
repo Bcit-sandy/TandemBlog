@@ -1,0 +1,243 @@
+.blog-post {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 100%);
+  padding: 2rem 0;
+}
+
+.blog-post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.post-detail {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border-light);
+}
+
+.post-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.author {
+  font-weight: 600;
+  color: var(--indigo);
+  font-size: 1.1rem;
+}
+
+.date {
+  color: var(--gray-500);
+  font-size: 1rem;
+}
+
+.category {
+  background: linear-gradient(135deg, var(--indigo), var(--purple));
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.post-content {
+  margin: 2rem 0;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: var(--gray-200);
+  color: var(--dark-gray);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: var(--indigo);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.post-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.share-button,
+.bookmark-button {
+  background: transparent;
+  border: 2px solid var(--indigo);
+  color: var(--indigo);
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.share-button:hover,
+.bookmark-button:hover {
+  background: var(--indigo);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.loading {
+  text-align: center;
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 4rem 0;
+}
+
+.error {
+  text-align: center;
+  color: var(--white);
+  padding: 4rem 0;
+}
+
+.error h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.error p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 1rem 0;
+  }
+  
+  .blog-post-container {
+    padding: 0 0.5rem;
+  }
+  
+  .post-detail {
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+  }
+  
+  .post-title {
+    font-size: 2rem;
+  }
+  
+  .meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .post-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .post-actions {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-detail {
+    padding: 1.5rem 1rem;
+  }
+  
+  .post-title {
+    font-size: 1.8rem;
+  }
+  
+  .post-content {
+    font-size: 1rem;
+  }
+  
+  .share-button,
+  .bookmark-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+

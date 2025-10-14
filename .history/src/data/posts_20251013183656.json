@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "image": "week1.png",
+    "title": "Week 1: Introduction to Tandem",
+    "excerpt": "This week, we explored the basics of Tandem and how it works.",
+    "content": "What happened this week?",
+    "author": "Thea",
+    "date": "October 13, 2025",
+    "category": ["Week 1", "Introduction"]
+  },
+  {
+    "id": 2,
+    "image": "week2.png",
+    "title": "Week 2: XXX",
+    "excerpt": "This week....",
+    "content": "Detailed description of what happened this week.",
+    "author": "Thea",
+    "date": "October 13, 2025",
+    "category": ["Week 2", "Introduction"]
+  },
+  {
+    "id": 3,
+    "title": "Week 3: XXX",
+    "excerpt": "Modern JavaScript features that every developer should know.",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "author": "Mike Johnson",
+    "date": "March 15, 2024",
+    "category": ["JavaScript", "ES6", "Programming"]
+  },
+  {
+    "id": 4,
+    "title": "Week 4: XXX",
+    "excerpt": "Best practices for creating websites that work on all devices.",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "author": "Sarah Wilson",
+    "date": "March 12, 2024",
+    "category": ["Web Design", "Responsive", "UX"]
+  },
+  {
+    "id": 5,
+    "title": "Week 5: XXX",
+    "excerpt": "Getting started with server-side JavaScript development.",
+    "content": "Node.js allows you to run JavaScript on the server, opening up new possibilities for full-stack development. Built on Chrome's V8 JavaScript engine, Node.js provides a non-blocking, event-driven architecture that's perfect for building scalable network applications. You can use the same language (JavaScript) for both frontend and backend development, which simplifies the development process and allows for code sharing. Node.js comes with npm, the world's largest software registry, giving you access to thousands of packages. Popular frameworks like Express.js make it easy to build web servers and APIs. The event loop handles asynchronous operations efficiently, making Node.js particularly good for real-time applications, APIs, and microservices. Whether you're building a simple web server or a complex application, Node.js provides the tools and ecosystem you need.",
+    "author": "David Brown",
+    "date": "March 10, 2024",
+    "category": ["Backend", "Node.js", "Server"]
+  }
+]

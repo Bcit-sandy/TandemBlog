@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "role": "Lead Developer",
+    "initials": "JD",
+    "bio": "Passionate about creating innovative web solutions and mentoring the next generation of developers.",
+    "avatar": "JD"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "role": "UI/UX Designer",
+    "initials": "JS",
+    "bio": "Focused on creating beautiful, user-centered designs that solve real-world problems.",
+    "avatar": "JS"
+  },
+  {
+    "id": 3,
+    "name": "Mike Johnson",
+    "role": "Technical Writer",
+    "initials": "MJ",
+    "bio": "Translating complex technical concepts into clear, engaging content for our readers.",
+    "avatar": "MJ"
+  }
+]
