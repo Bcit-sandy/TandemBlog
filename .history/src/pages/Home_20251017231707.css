@@ -1,0 +1,267 @@
+.home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.hero {
+    background-color: var(--blue);
+    width: 95%;
+    min-height: 70vh;
+    margin: auto;
+    margin-top: 5em;
+    color: var(--white);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-radius: 25px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    position: absolute;
+    right: 15vw;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content p {
+    position: absolute;
+    top: 40%;
+    right: 15vw;
+    font-size: 1.3rem;
+    max-width: 600px;
+    opacity: 0.9;
+}
+
+.hero-content p:last-child {
+    margin-bottom: 2rem;
+    margin-top: 50%;
+}
+
+/* Our Mission Section */
+.our-mission {
+    padding: 80px 0;
+    background: var(--white);
+    text-align: center;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mission-content h1 {
+    font-size: 2.8rem;
+    color: var(--blue-primary);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.mission-content p {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mission-content p::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        var(--green-primary),
+        var(--green-secondary)
+    );
+    border-radius: 2px;
+}
+
+.featured-posts {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.featured-posts h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--blue-primary);
+    position: relative;
+}
+
+.featured-posts h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--green-primary),
+        var(--green-secondary)
+    );
+    border-radius: 2px;
+}
+
+.posts-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.post-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--green-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.post-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--green-primary),
+        var(--green-secondary)
+    );
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover::before {
+    transform: scaleX(1);
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.post-card h3 {
+    color: var(--blue-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.post-card p {
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.post-date {
+    color: var(--green-primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .mission-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .mission-content p {
+        font-size: 1.1rem;
+    }
+
+    .featured-posts h2 {
+        font-size: 2rem;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .post-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 0;
+        min-height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .our-mission {
+        padding: 60px 0;
+    }
+
+    .mission-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .mission-content p {
+        font-size: 1rem;
+    }
+
+    .featured-posts {
+        padding: 60px 0;
+    }
+
+    .featured-posts h2 {
+        font-size: 1.8rem;
+    }
+}
