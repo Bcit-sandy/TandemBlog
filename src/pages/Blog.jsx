@@ -31,8 +31,10 @@ const Blog = () => {
                 <h3>{post.title}</h3>
                 <p>{post.excerpt}</p>
                 <div className="post-meta">
-                  <span className="author">{post.author}</span>
-                  <span className="date">{post.date}</span>
+                  <div className="post-meta-info">
+                    <span className="author">{post.author}</span>
+                    <span className="date">{post.date}</span>
+                  </div>
                   <div className="categories">
                     {post.category.map((cat, index) => (
                       <span key={index} className="category">{cat}</span>

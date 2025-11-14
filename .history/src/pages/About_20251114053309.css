@@ -1,0 +1,530 @@
+.about {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.about-header {
+    background: var(--linear-gradient);
+    width: 100%;
+    min-height: 90vh;
+    color: var(--white);
+    padding: 4rem 4rem 0 4rem;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group-image {
+    background-color: grey;
+    width: 100vw;
+    height: 30vw;
+    border-radius: 40px;
+}
+
+.about-header h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+}
+
+.about-header p {
+    font-size: 1.1rem;
+    color: var(--white);
+    opacity: 0.8;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.meet-team-btn {
+    margin-top: 2rem;
+    padding: 14px 32px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    outline: none;
+}
+
+.btn-team-txt {
+    font-weight: 800;
+}
+
+.meet-team-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--white);
+    color: red;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: 1;
+}
+
+.meet-team-btn:hover {
+    box-shadow: 1px 1px 200px var(--white);
+    border: none;
+    color: red;
+}
+
+.meet-team-btn:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+}
+
+.meet-team-btn:focus {
+    outline: none;
+    border: 2px solid var(--white);
+    color: red;
+}
+
+.meet-team-btn:focus:not(:hover) {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+.about-content {
+    display: grid;
+    gap: 4rem;
+    background: var(--white);
+    box-sizing: border-box;
+}
+
+.team {
+    background: var(--white);
+    padding: 3rem;
+}
+
+.team h2 {
+    color: var(--black);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Team Carousel */
+.team-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    position: relative;
+    min-height: 350px;
+}
+
+.team-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Previous and Next member cards (smaller, dark gray) */
+.previous-member,
+.next-member {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.previous-member .member-image-placeholder,
+.next-member .member-image-placeholder {
+    width: 200px;
+    height: 200px;
+    background: var(--primary-blue-dark);
+    opacity: 0.8;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Current member card (larger, light gray) */
+.current-member {
+    width: 300px;
+}
+
+.current-member .member-image-placeholder {
+    width: 300px;
+    height: 300px;
+    background: var(--light-blue);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.member-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.member-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation buttons */
+.carousel-nav-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-green-normal);
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.carousel-nav-btn:hover {
+    transform: scale(1.1) translateY(-50%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.prev-btn {
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+}
+
+.prev-btn:hover {
+    transform: scale(1.1) translateY(-50%);
+}
+
+.next-btn {
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+}
+
+.next-btn:hover {
+    transform: scale(1.1) translateY(-50%);
+}
+
+/* Member labels */
+.member-label {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.previous-label {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.next-label {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.label-text {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    font-weight: 400;
+}
+
+.label-name {
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+/* Team member details */
+.team-member-details {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.member-name {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    font-size: 1.1rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.member-bio {
+    font-size: 1rem;
+    color: var(--black);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: justify;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-header {
+        padding: 100px 0 60px 0;
+    }
+
+    .about-header .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 30px;
+    }
+
+    .about-header .about-container::after {
+        display: none;
+    }
+
+    .about-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-content {
+        width: calc(100% - 60px);
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header {
+        padding: 100px 0 50px 0;
+    }
+
+    .about-header .about-container {
+        padding: 0 20px;
+    }
+
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+
+    .meet-team-btn {
+        font-size: 0.9rem;
+        padding: 12px 24px;
+    }
+
+    .about-content {
+        padding: 40px 20px;
+        width: calc(100% - 40px);
+    }
+
+    .team {
+        padding: 2rem;
+    }
+
+    .team h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .team-carousel {
+        gap: 1rem;
+        min-height: 300px;
+    }
+
+    .previous-member,
+    .next-member {
+        width: 120px;
+    }
+
+    .previous-member .member-image-placeholder,
+    .next-member .member-image-placeholder {
+        width: 120px;
+        height: 120px;
+    }
+
+    .current-member {
+        width: 200px;
+    }
+
+    .current-member .member-image-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+
+    .carousel-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .prev-btn {
+        left: -20px;
+    }
+
+    .next-btn {
+        right: -20px;
+    }
+
+    .member-name {
+        font-size: 2rem;
+    }
+
+    .member-bio {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header {
+        padding: 100px 0 40px 0;
+    }
+
+    .about-header .about-container {
+        padding: 0 15px;
+    }
+
+    .about-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .meet-team-btn {
+        font-size: 0.85rem;
+        padding: 10px 20px;
+    }
+
+    .about-header p {
+        font-size: 0.9rem;
+    }
+
+    .about-content {
+        padding: 30px 15px;
+        margin-top: 30px;
+    }
+
+    .team {
+        padding: 1.5rem;
+    }
+
+    .team h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .team-carousel {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        min-height: auto;
+    }
+
+    .previous-member,
+    .next-member {
+        width: 150px;
+    }
+
+    .previous-member .member-image-placeholder,
+    .next-member .member-image-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+
+    .current-member {
+        width: 250px;
+    }
+
+    .current-member .member-image-placeholder {
+        width: 250px;
+        height: 250px;
+    }
+
+    .carousel-nav-btn {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+
+    .prev-btn,
+    .next-btn {
+        position: relative;
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+
+    .prev-btn:hover,
+    .next-btn:hover {
+        transform: scale(1.1);
+    }
+
+    .member-name {
+        font-size: 1.5rem;
+    }
+
+    .member-role {
+        font-size: 1rem;
+    }
+
+    .member-bio {
+        font-size: 0.85rem;
+    }
+
+    .contact-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
