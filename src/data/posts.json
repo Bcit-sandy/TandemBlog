@@ -10,43 +10,53 @@
         "category": ["Week 1", "Introduction"]
     },
     {
-        "id": 2,
+        "id": 6,
         "image": "weeklyupdate6.png",
-        "title": "Week 6: full steam ahead!",
+        "title": "Week 6: Full Steam Ahead!",
         "excerpt": "This week we finalized our research and are moving onward!",
         "content": "Introduction\n\nThis week felt really chaotic! It was a mix of trying to figure out research, our main feature, and our workflow! From going out and talking to real parents in trades to holding team meetings to refine our work, this week was filled with a lot of progress, creativity and team work. Week 6 was all about refining our idea and going out and connecting with real people who face the issue we’re tackling. Here’s what we’ve been up to!\n\n Design team\n\nWe were fully hands on with our research and design\n\n- Research: We started our week by handing out our survey and collecting results\n- Workflow: We met up and refined our workflow after our research results to fit the needs of our users completely!\n- Logo: We started to finalize our logo design! Special thanks to our lovely teammates Bonnie and Sandy for all their hard work!\n\n Dev team\n\nOur dev team was hard at work with us!\n\n- Research: A lot of research. They researched all about every single function or thing we could implement into our app\n- Code testing: Alongside this research, they’ve been testing it out every step of the way!\n\n Team moment: A struggle for results\n\nLet me tell you, this week was one of highs and lows, in which we came out victorious. We barely knew any parents in trades, so we had to find ways to get people to take our survey. Thus, two of our teammates were sent out. Angie and Thea (yup, that’s me!) went out to a pizza lunch at the ConnectHer Hub at BCIT! We got to hear from so many people, and got to really learn about the people our app is for! At the end, after two grueling hours of making sure we asked everyone who walked in if they knew anyone or were a parent in trades, we managed to pull through and get all the survey results we needed!\n\n Looking ahead: week 7\n\nAs we head into week 7, it’s full steam ahead! We’re working on our app even more, finalizing where we’re heading and bringing it to life!",
         "author": "Thea",
         "date": "October 13, 2025",
-        "category": ["Week 2", "Introduction"]
+        "category": ["Week 6", "Blog Post"]
     },
     {
-        "id": 3,
+        "id": 7,
         "image": "week3.png",
-        "title": "Week 3: XXX",
-        "excerpt": "Modern JavaScript features that every developer should know.",
+        "title": "Week 7: Locked In",
+        "excerpt": "The team fully locked in, and huge steps were made!",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "author": "Mike Johnson",
         "date": "March 15, 2024",
-        "category": ["JavaScript", "ES6", "Programming"]
+        "category": ["Week 7", "Blog Post"]
     },
     {
-        "id": 4,
+        "id": 8,
         "image": "week4.png",
-        "title": "Week 4: XXX",
-        "excerpt": "Best practices for creating websites that work on all devices.",
+        "title": "Week 8: Adventure Week! (And Midterm week)",
+        "excerpt": "A week of adventure and collaboration!",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "author": "Sarah Wilson",
         "date": "March 12, 2024",
-        "category": ["Web Design", "Responsive", "UX"]
+        "category": ["Week 8", "Blog Post"]
     },
     {
-        "id": 5,
+        "id": 9,
         "image": "week5.png",
-        "title": "Week 5: XXX",
+        "title": "Week 9: Chaos and Creation",
         "excerpt": "Getting started with server-side JavaScript development.",
         "content": "Node.js allows you to run JavaScript on the server, opening up new possibilities for full-stack development. Built on Chrome's V8 JavaScript engine, Node.js provides a non-blocking, event-driven architecture that's perfect for building scalable network applications. You can use the same language (JavaScript) for both frontend and backend development, which simplifies the development process and allows for code sharing. Node.js comes with npm, the world's largest software registry, giving you access to thousands of packages. Popular frameworks like Express.js make it easy to build web servers and APIs. The event loop handles asynchronous operations efficiently, making Node.js particularly good for real-time applications, APIs, and microservices. Whether you're building a simple web server or a complex application, Node.js provides the tools and ecosystem you need.",
         "author": "David Brown",
         "date": "March 10, 2024",
-        "category": ["Backend", "Node.js", "Server"]
+        "category": ["Week 9", "Blog Post"]
+    },
+    {
+        "id": 10,
+        "image": "week5.png",
+        "title": "Week 10: Slowly Closing In",
+        "excerpt": "Getting started with server-side JavaScript development.",
+        "content": "Node.js allows you to run JavaScript on the server, opening up new possibilities for full-stack development. Built on Chrome's V8 JavaScript engine, Node.js provides a non-blocking, event-driven architecture that's perfect for building scalable network applications. You can use the same language (JavaScript) for both frontend and backend development, which simplifies the development process and allows for code sharing. Node.js comes with npm, the world's largest software registry, giving you access to thousands of packages. Popular frameworks like Express.js make it easy to build web servers and APIs. The event loop handles asynchronous operations efficiently, making Node.js particularly good for real-time applications, APIs, and microservices. Whether you're building a simple web server or a complex application, Node.js provides the tools and ecosystem you need.",
+        "author": "David Brown",
+        "date": "March 10, 2024",
+        "category": ["Week 10", "Blog Post"]
     }
 ]
