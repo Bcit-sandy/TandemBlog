@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Thea",
+        "role": "Project Manager",
+        "bio": "Passionate about creating innovative web solutions and mentoring the next generation of developers.",
+        "avatar": "Thea.png",
+        "linkedin": "https://www.linkedin.com/in/thea-profile"
+    },
+    {
+        "id": 2,
+        "name": "Angie",
+        "role": "Design Lead",
+        "bio": "Hi, this is Angie!",
+        "avatar": "Angie.png",
+        "github": "https://github.com"
+    },
+    {
+        "id": 3,
+        "name": "Whoever goes here",
+        "role": "later issue",
+        "bio": "Will be added later",
+        "avatar": "placeholder.png",
+        "linkedin": "https://www.linkedin.com/in/placeholder-profile",
+        "github": "https://github.com"
+    },
+    {
+        "id": 4,
+        "name": "Alex",
+        "role": "Frontend Developer",
+        "bio": "Specializing in React and modern web technologies. Passionate about creating beautiful and functional user interfaces.",
+        "avatar": "placeholder.png",
+        "linkedin": "https://www.linkedin.com/in/alex-profile",
+        "github": "https://github.com/alex"
+    },
+    {
+        "id": 5,
+        "name": "Sam",
+        "role": "Backend Developer",
+        "bio": "Expert in server-side architecture and database design. Loves solving complex technical challenges.",
+        "avatar": "placeholder.png",
+        "linkedin": "https://www.linkedin.com/in/sam-profile",
+        "github": "https://github.com/sam"
+    },
+    {
+        "id": 6,
+        "name": "Jordan",
+        "role": "UX Designer",
+        "bio": "Focused on creating intuitive and accessible user experiences. Believes in user-centered design principles.",
+        "avatar": "placeholder.png",
+        "linkedin": "https://www.linkedin.com/in/jordan-profile",
+        "github": "https://github.com/jordan"
+    },
+    {
+        "id": 7,
+        "name": "Taylor",
+        "role": "Full Stack Developer",
+        "bio": "Versatile developer with expertise across the entire tech stack. Enjoys building end-to-end solutions.",
+        "avatar": "placeholder.png",
+        "linkedin": "https://www.linkedin.com/in/taylor-profile",
+        "github": "https://github.com/taylor"
+    },
+    {
+        "id": 8,
+        "name": "Casey",
+        "role": "DevOps Engineer",
+        "bio": "Ensuring smooth deployments and system reliability. Passionate about automation and infrastructure as code.",
+        "avatar": "placeholder.png",
+        "linkedin": "https://www.linkedin.com/in/casey-profile",
+        "github": "https://github.com/casey"
+    }
+]
