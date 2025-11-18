@@ -1,62 +1,72 @@
 [
     {
         "id": 1,
-        "image": "week1.png",
-        "title": "Week 1: Introduction to Tandem",
-        "excerpt": "This week, we explored the basics of Tandem and how it works.",
-        "content": "What happened this week?",
-        "author": "Thea",
+        "image": "meettheteam.png",
+        "title": "What is Tandem?",
+        "excerpt": "Who are we, and why it matters.",
+        "content": " Did you know 63% of tradeswomen are parents—and all of them struggle with childcare? \n\n Childcare in BC is already tough. Add the unpredictable schedules of tradeswork, and it becomes nearly impossible to manage. For many, this isn’t a hypothetical—it’s their daily reality. That’s why Tandem is here: to bridge the gap between work and care. \n\n  Tandem is an app for parents in trades to help balance work with childcare. It utilizes AI to help busy parents balance the responsibilities of work and childcare, providing trustworthy recommendations and supportive childcare. It allows parents in the trades to find childcare easily, reducing stress and improving work-life balance. \n\n  Instead of a world where childcare feels overwhelming and inconsistent, Tandem offers one that’s supportive, flexible, and reliable. \n\n Trustworthy. Balance. Support. These are the words we strive to bring to everyone's lives.",
+        "author": "Thea Calaquian",
         "date": "October 13, 2025",
-        "category": ["Week 1", "Introduction"]
+        "category": ["Meet Tandem!", "Introduction"]
     },
     {
         "id": 6,
-        "image": "weeklyupdate6.png",
+        "image": "week 6.png",
         "title": "Week 6: Full Steam Ahead!",
         "excerpt": "This week we finalized our research and are moving onward!",
         "content": "Introduction\n\nThis week felt really chaotic! It was a mix of trying to figure out research, our main feature, and our workflow! From going out and talking to real parents in trades to holding team meetings to refine our work, this week was filled with a lot of progress, creativity and team work. Week 6 was all about refining our idea and going out and connecting with real people who face the issue we’re tackling. Here’s what we’ve been up to!\n\n Design team\n\nWe were fully hands on with our research and design\n\n- Research: We started our week by handing out our survey and collecting results\n- Workflow: We met up and refined our workflow after our research results to fit the needs of our users completely!\n- Logo: We started to finalize our logo design! Special thanks to our lovely teammates Bonnie and Sandy for all their hard work!\n\n Dev team\n\nOur dev team was hard at work with us!\n\n- Research: A lot of research. They researched all about every single function or thing we could implement into our app\n- Code testing: Alongside this research, they’ve been testing it out every step of the way!\n\n Team moment: A struggle for results\n\nLet me tell you, this week was one of highs and lows, in which we came out victorious. We barely knew any parents in trades, so we had to find ways to get people to take our survey. Thus, two of our teammates were sent out. Angie and Thea (yup, that’s me!) went out to a pizza lunch at the ConnectHer Hub at BCIT! We got to hear from so many people, and got to really learn about the people our app is for! At the end, after two grueling hours of making sure we asked everyone who walked in if they knew anyone or were a parent in trades, we managed to pull through and get all the survey results we needed!\n\n Looking ahead: week 7\n\nAs we head into week 7, it’s full steam ahead! We’re working on our app even more, finalizing where we’re heading and bringing it to life!",
-        "author": "Thea",
+        "author": "Thea Calaquian",
         "date": "October 13, 2025",
         "category": ["Week 6", "Blog Post"]
     },
     {
         "id": 7,
-        "image": "week3.png",
+        "image": "week7.png",
         "title": "Week 7: Locked In",
         "excerpt": "The team fully locked in, and huge steps were made!",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "author": "Mike Johnson",
-        "date": "March 15, 2024",
+        "content": "Introduction \n\nThis week was hectic! The team really pushed to get work done, and we finished making our first hifi version of our app using the information we gathered from week 6. Week 7 was all about implementing what we learned to make our app perfect for our users. Here’s what we’ve been up to!\n\nDesign team \n\nWe were fully hands on with our hifi\n- Research: We started our week by using the research we got last week and implementing it into our work \n- Design: We finished our first polished version of our app to get ready to be reviewed!\n- Logo: We decided on a logo! With this, we now have a consistent theme that our app revolves around.\n\nDev team\n\n Our dev team was working hard as well!\n- Research: The dev team was also able to implement the research they did for our AI upload and scheduling to their own code! With our hifi existing, they were also able to now work on the frontend as well. \n- Code testing: Alongside this research, they’ve been testing it out every step of the way!\n\nTeam moment: A joint group effort \n\nThis was a week where everyone was going full steam ahead. Many of us had late night calls, working to perfect our app. It was a week of team bonding (and suffering admittedly). Many cups of coffee were inhaled during this week. We were really glad for all the research we got from everyone, as it really helped us understand what to do going ahead. At the end, we managed to make it through our work filled week with a product we could be proud of!\n\nLooking ahead: week 8\n\nWe’re editing and implementing even more to our app to best fit our users, and making something that truly aligns with our goal, to support tradesparents!",
+        "author": "Thea Calaquian",
+        "date": "October 20th, 2025",
         "category": ["Week 7", "Blog Post"]
     },
     {
         "id": 8,
-        "image": "week4.png",
+        "image": "week 8.png",
         "title": "Week 8: Adventure Week! (And Midterm week)",
         "excerpt": "A week of adventure and collaboration!",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "author": "Sarah Wilson",
-        "date": "March 12, 2024",
+        "content": "Introduction\n\nThis was an interesting week for both teams! The D3 team adventured down to the BCIT campus to work with our Dev team to prepare for our midterm presentation! This week was full of energy and nerves for both our teams as we prepped ourselves to present Tandem. Here’s what we’ve been up to!\n\nDesign team\n\nWe were all about editing and creation!\n- Midterm: We finalized our script and finished creating our presentation slides!\n- Design: We continued to implement feedback into the design of our app, editing and deciding for a full rework of colours to make our app seem more lively.\n\nDev team\n\nOur dev team finished their amazing coded out first version of our app!\n- Coding: The dev team finished making the first fully coded version of our app with fully working features!\n- Frontend work: The team continued to update the frontend work they did to match the D3’s teams ever evolving progress.\n\nTeam moment: Downtown meetup!\n\nThis was a very adventurous week for us D3 students, and a very funny week for the Dev team. We decided to meet up with the Dev team at the downtown campus to practice and go over everything for our midterm. For many of us it was an enjoyable time, also allowing us to explore and look around the downtown area, which we normally don’t get to do! The Dev team found it funny to see us bumble around, unused to the surroundings. Through the struggles of the Dev team trying to find a study room and a very common theme of D3 students purchasing matcha, we finally managed to settle down and refine our midterm presentation! We felt fully prepared and ready to tackle the challenge ahead, and were excited to see where this would lead!\n\nLooking ahead: week 9\n\nAfter our midterm, we plan to rework our current design to better fit our audience, and to start user testing on our hifi to make sure that we always have tradesparents at the forefront of all our decision making. ",
+        "author": "Thea Calaquian",
+        "date": "October 27th, 2025",
         "category": ["Week 8", "Blog Post"]
     },
     {
         "id": 9,
-        "image": "week5.png",
+        "image": "week9.png",
         "title": "Week 9: Chaos and Creation",
-        "excerpt": "Getting started with server-side JavaScript development.",
-        "content": "Node.js allows you to run JavaScript on the server, opening up new possibilities for full-stack development. Built on Chrome's V8 JavaScript engine, Node.js provides a non-blocking, event-driven architecture that's perfect for building scalable network applications. You can use the same language (JavaScript) for both frontend and backend development, which simplifies the development process and allows for code sharing. Node.js comes with npm, the world's largest software registry, giving you access to thousands of packages. Popular frameworks like Express.js make it easy to build web servers and APIs. The event loop handles asynchronous operations efficiently, making Node.js particularly good for real-time applications, APIs, and microservices. Whether you're building a simple web server or a complex application, Node.js provides the tools and ecosystem you need.",
-        "author": "David Brown",
-        "date": "March 10, 2024",
+        "excerpt": "Lots of work done, lots of caffeine consumed.",
+        "content": "Introduction\n\nThis was a week of both creation and the chaos that followed. Adjusting all our design was a difficult task to the D3, and late nights were spent trying to make everything cohesive, and making sure we didn’t break anything in our prototyping. All the while, the Dev team could only watch and wait for us to finish. This week was filled with team chaos which led to team bonding, and was a true test of how cohesive of a team we were! Here’s what we’ve been up to!\n\nDesign team\n\nWe fully focused ourselves on redoing design and fixing prototyping!\n- Design: We decided as a team on what needed to be reworked in terms of design, and changed our colour palette to have a brighter, more welcoming feel!\n- Print: We started discussing our printed material for the showcase! We discussed brochures, keychains, business cards, cookies, and so much more! We have big plans in store.\n- Prototyping: While some of us implemented our new design, the others reduced the work needed and fixed any broken prototyping found.\n\nDev team\n\nOur dev team was constantly reiterating and also creating our nanny share function!\n- New feature: The dev team was hard at work creating our newest feature, nanny sharing! It was a big task, but they managed to divide and conquer.\n- Components: They also focused on updating components to match our new design\n\nTeam moment: Clarification time!\n\nTired and weary from the past few weeks of constant work, many of us needed some time to reconvene and make sure we were all on the same page. As we made our way down to a creative room at the BCIT Burnaby campus, we all managed to clarify and ask our questions. We found ourselves amused also, as there were many…many fidget toys. Many slinkies and pop sockets were used, and it was definitely a strange morale boost for all of us. \n\nLooking ahead: week 10\n\nAs we head into week 10, we want to focus on testing both the D3 and Dev side of our work! Again, we want to make sure we’re fully centered and committed to who we’re making this app for.",
+        "author": "Thea Calaquian",
+        "date": "November 3rd, 2025",
         "category": ["Week 9", "Blog Post"]
     },
     {
         "id": 10,
-        "image": "week5.png",
+        "image": "week10.png",
         "title": "Week 10: Slowly Closing In",
-        "excerpt": "Getting started with server-side JavaScript development.",
-        "content": "Node.js allows you to run JavaScript on the server, opening up new possibilities for full-stack development. Built on Chrome's V8 JavaScript engine, Node.js provides a non-blocking, event-driven architecture that's perfect for building scalable network applications. You can use the same language (JavaScript) for both frontend and backend development, which simplifies the development process and allows for code sharing. Node.js comes with npm, the world's largest software registry, giving you access to thousands of packages. Popular frameworks like Express.js make it easy to build web servers and APIs. The event loop handles asynchronous operations efficiently, making Node.js particularly good for real-time applications, APIs, and microservices. Whether you're building a simple web server or a complex application, Node.js provides the tools and ecosystem you need.",
-        "author": "David Brown",
-        "date": "March 10, 2024",
+        "excerpt": "Getting closer to the finish line!",
+        "content": "Introduction\n\nThis was a very interesting week. The D3 team headed down to Langley to film, all while the Dev team overlooked all the D3 work, and also helped assign code work to the D3 team. The teams also decided to celebrate our midterm work (finally) and went out to hang out! It was a week filled with outings and team collaboration. Here’s what we’ve been up to!\n\nDesign team\n\nWe were dedicated to film for our advertisement! \n- Filming: We headed down to Langley for our actors, and got all the shots we needed. It was a lot of experimentation and learning along the way, but it was a fun experience. (Plus, the team got to eat at Bigway together, which was a blast of course.)\n- Print: The team divided the work and has gone on to working on making our ideas a reality. We’re excited to finally see our creations made in person!\n\nDev team\n\nOur dev team is constantly working hard and implementing every new detail!\n- Revision: The team is constantly checking our work to make sure their code aligns with our design, and they’re very attentive to every little detail!\n- Meetings: The Dev team has been frequently meeting to help and uplift each other through any difficulties\n- Roadmap: Alongside every time, the Dev team now has a clear roadmap to follow!\n\nTeam moment: A fun time out!\n\nI know you’re used to me, Thea, writing these parts, but I’ll pass it onto Sandy, as I was actually unable to attend unfortunately. \n\nThe team hosted a meet-up on Wednesday where we enjoyed pho together and played a board game. It was really nice to sit down, relax, and share our thoughts outside of project work. Moments like these help us understand each other better and strengthen our team connection. We’re a group coming from different parts of the world, each bringing unique values and perspectives to the project, and spending time together like this feels genuinely warm and meaningful.\n\nLooking ahead: week 11\n\nAs we head into week 10, we want to focus on testing both the D3 and Dev side of our work! Again, we want to make sure we’re fully centered and committed to who we’re making this app for.",
+        "author": "Thea Calaquian",
+        "date": "November 10th, 2025",
         "category": ["Week 10", "Blog Post"]
+    },
+    {
+        "id": 11,
+        "image": "week11.png",
+        "title": "Week 11: Work, Work, Work!",
+        "excerpt": "Where hard work and dedication shines.",
+        "content": "Nothing yet.",
+        "author": "Thea Calaquian",
+        "date": "November 10th, 2025",
+        "category": ["Week 11", "Blog Post"]
     }
 ]
