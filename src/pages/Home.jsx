@@ -17,8 +17,8 @@ const Home = () => {
             <section className='hero'>
                 <div className='hero-content'>
                     <h1>Tandem</h1>
-                    <p>Slogan goes here</p>
-                    <p> A brief description goes here</p>
+                    <p>Bridging the gap in work and childcare</p>
+                    <p> Your childcare partner that balances your work-life schedule so you can parent with confidence.</p>
                     <button
                         className='learn-more-btn'
                         onClick={scrollToMission}
@@ -52,11 +52,7 @@ const Home = () => {
                             <span className='tandem-highlight'>Tandem</span> ?
                         </h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. 
+                            Tandem is an app for parents in trades to help balance work with childcare. It utilizes AI to help busy parents balance the responsibilities of work and childcare, providing trustworthy recommendations and supportive childcare. It allows parents in the trades to find childcare easily, reducing stress and improving work-life balance. 
                         </p>
                     </div>
                 </section>
@@ -66,18 +62,19 @@ const Home = () => {
 
                     <div className='posts-grid'>
                         <article className='post-card'>
-                            <h3>Core Values #1</h3>
-                            <p>Description goes here</p>
+                            <h3>Trustworthy</h3>
+                            <p>Schedules are unpredictable. Instead of a world where childcare feels overwhelming and inconsistent, Tandem offers one that's stable and reliable. </p>
                         </article>
 
                         <article className='post-card'>
-                            <h3>Core Values #2</h3>
-                            <p>Description goes here</p>
+                            <h3>Balanced</h3>
+                            <p>Work and family should work in Tandem. Parenthood is already life-changing, and we want to make balancing it with work less stressful.
+</p>
                         </article>
 
                         <article className='post-card'>
-                            <h3>Core Values #3</h3>
-                            <p>Description goes here</p>
+                            <h3>Supportive</h3>
+                            <p>Childcare can be a lonely and confusing. We aims to bring trade parents together so that their schedules can work in Tandem.  </p>
                         </article>
                     </div>
                 </section>
