@@ -41,31 +41,20 @@ const About = () => {
     const rightMember = team[getIndex(1)];
     const farRightMember = team[getIndex(2)];
 
-    const scrollToTeam = () => {
-        teamRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-    };
-
     return (
         <div className='about'>
             <header className='about-header'>
                 <div className='header-content'>
                     <h1>About Us</h1>
+                    <img
+                        className='group-image'
+                        src='/Team/group.jpg'
+                        alt='Group image'
+                    />
                     <p>
-                        Our team is working together to bring you the best
-                        content and experiences. BLA BLA BLA INFO HERE
+                        We know that balancing demanding trade work with childcare isn't easy — many of us have experienced that struggle firsthand or witnessed it in our communities. That's why we built Tandem. As a team of designers and developers, we came together with one goal: to ease the pressure parents feel and provide meaningful, practical support. Through an easy-to-use, AI-driven platform, we help parents navigate schedules, find resources, and bring a sense of balance back into work and family life.
                     </p>
-                    <button
-                        className='meet-team-btn'
-                        onClick={scrollToTeam}
-                    >
-                        Meet the team
-                    </button>
                 </div>
-                <img
-                    className='group-image'
-                    src=''
-                    alt=''
-                />
             </header>
 
             <section className='about-content'>
@@ -120,6 +109,12 @@ const About = () => {
                                     src={`/Team/${currentMember.avatar}`}
                                     alt={currentMember.name}
                                 />
+                                <div className='member-overlay'>
+                                    <h3 key={`name-${currentIndex}`} className='member-name-overlay'>{currentMember.name}</h3>
+                                    <p key={`role-${currentIndex}`} className='member-role-overlay'>
+                                        {currentMember.role || "Tandem staff"}
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
@@ -158,14 +153,10 @@ const About = () => {
                     </div>
 
                     {/* Current member details */}
-                    <div 
+                    <section
                         key={`details-${currentIndex}`}
                         className='team-member-details'
                     >
-                        <h3 key={`name-${currentIndex}`} className='member-name'>{currentMember.name}</h3>
-                        <p key={`role-${currentIndex}`} className='member-role'>
-                            {currentMember.role || "Tandem staff"}
-                        </p>
                         <p key={`bio-${currentIndex}`} className='member-bio'>
                             {currentMember.bio ||
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."}
@@ -203,7 +194,7 @@ const About = () => {
                                 </a>
                             )}
                         </div>
-                    </div>
+                    </section>
                 </div>
             </section>
         </div>

@@ -3,70 +3,69 @@
         "id": 1,
         "name": "Thea",
         "role": "Project Manager",
-        "bio": "Passionate about creating innovative web solutions and mentoring the next generation of developers.",
-        "avatar": "Thea.png",
-        "linkedin": "https://www.linkedin.com/in/thea-profile"
+        "bio": "Thea is the lead keeping the project on track. Known for her ability to keep the team on track and raise team morale and spirit, she ensures every task is completed efficiently and supports every team member. She also helps create effective, engaging designs and visuals.",
+        "avatar": "thea.jpg",
+        "linkedin": "https://www.linkedin.com/in/thea-calaquian-941b07309/"
     },
     {
         "id": 2,
         "name": "Angie",
         "role": "Design Lead",
-        "bio": "Hi, this is Angie!",
-        "avatar": "Angie.png",
-        "github": "https://github.com"
+        "bio": "Angie is a designer with a happily scattered focus, she enjoy diving into everything from UX/UI and graphics to digital painting. Angie's brain doesn't truly boot up without her daily matcha or bubble tea, they're her non-negotiable creative fuel. Angie get a real kick out of front-end coding too, and she is a collaborative problem-solver at heart, always drawn to challenging projects because they're where she learn from the most. Basically, she is just someone who loves making things and learning along the way.",
+        "avatar": "angie.jpg",
+        "linkedin": "https://www.linkedin.com/in/trang-van-khanh-duong-25a0a0350/"
     },
     {
         "id": 3,
         "name": "Sandy",
-        "role": "later issue",
-        "bio": "Will be added later",
-        "avatar": "placeholder.png",
+        "role": "UI / UX Designer",
+        "bio": "Sandy is a UI/UX designer and researcher shaping digital experiences through empathy, clarity, and purpose. She combines creativity with critical thinking to connect technology and human emotion. Cat and caffeine keep her working. She enjoys analyzing MBTI types for fun.",
+        "avatar": "sandy.jpg",
         "linkedin": "https://www.linkedin.com/in/placeholder-profile",
         "github": "https://github.com"
     },
     {
         "id": 4,
         "name": "Bonnie",
-        "role": "Frontend Developer",
-        "bio": "Specializing in React and modern web technologies. Passionate about creating beautiful and functional user interfaces.",
-        "avatar": "placeholder.png",
-        "linkedin": "https://www.linkedin.com/in/alex-profile",
-        "github": "https://github.com/alex"
+        "role": "UI / UX Designer",
+        "bio": "Bonnie is a graphic designer with over 5 years of experience and a strong marketing background, currently expanding her expertise into UI/UX design. Her multidisciplinary experience allows her to bridge user needs and business objectives, creating designs that are both visually compelling and strategically effective.",
+        "avatar": "bonnie.jpg",
+        "linkedin": "https://www.linkedin.com/in/bonniewan1998/"
     },
     {
         "id": 5,
         "name": "Alyssa",
-        "role": "Backend Developer",
-        "bio": "Expert in server-side architecture and database design. Loves solving complex technical challenges.",
-        "avatar": "placeholder.png",
-        "linkedin": "https://www.linkedin.com/in/sam-profile",
+        "role": "UI / UX Designer",
+        "bio": "Alyssa plays a dual role in our team, using her talents in both design and coding to support our team. Whether she’s creating stunning interfaces or coding easy-to-use sites, Alyssa ensures that both our app’s functionality and design go hand in hand. When she isn’t collating research findings or refining wireframes, she can usually be found recharging with a coffee (or two) in hand.",
+        "avatar": "alyssa.jpg",
+        "linkedin": "https://www.linkedin.com/in/alyssa-huggins-1863a3332/",
         "github": "https://github.com/sam"
     },
     {
         "id": 6,
-        "name": "Stef",
-        "role": "UX Designer",
-        "bio": "Focused on creating intuitive and accessible user experiences. Believes in user-centered design principles.",
-        "avatar": "placeholder.png",
-        "linkedin": "https://www.linkedin.com/in/jordan-profile",
-        "github": "https://github.com/jordan"
+        "name": "Stepf",
+        "role": "Full Stack Developer",
+        "bio": "Stefan is a Full Stack Web Developer. Born in Russia, raised in Bali, and now based in Canada, 20 years old. Spent most of school gaming with friends, never quite sure what direction to take after graduating. Liked math, but it was boring - so he chose development because, well, computers are cool. Loves organizing files into folders, hates Linux, and in his free time either annoys people or bedrots. Knows how to kite surf and do parkour🪁.",
+        "avatar": "stepf.jpg",
+        "linkedin": "https://www.linkedin.com/in/stefan-dorosh-19b946323/",
+        "github": "https://github.com/SDX24"
     },
     {
         "id": 7,
         "name": "Matt",
         "role": "Full Stack Developer",
-        "bio": "Versatile developer with expertise across the entire tech stack. Enjoys building end-to-end solutions.",
-        "avatar": "placeholder.png",
-        "linkedin": "https://www.linkedin.com/in/taylor-profile",
-        "github": "https://github.com/taylor"
+        "bio": "Matheus is a 19-year-old full stack web developer originally from Brazil. His interest in technology started when he was a kid, because he grew up playing video games. He likes working on both the front and back ends of web apps, but he’s more into making clean, efficient back end systems. When he’s not coding, you’ll find him staying active with sports like soccer, snowboarding, and jiu-jitsu, anything that keeps him moving and challenged.",
+        "avatar": "matt.jpg",
+        "linkedin": "https://www.linkedin.com/in/matheus-demeis/",
+        "github": "https://github.com/MatheusDemeis"
     },
     {
         "id": 8,
         "name": "Lam",
         "role": "DevOps Engineer",
-        "bio": "Ensuring smooth deployments and system reliability. Passionate about automation and infrastructure as code.",
-        "avatar": "placeholder.png",
-        "linkedin": "https://www.linkedin.com/in/casey-profile",
-        "github": "https://github.com/casey"
+        "bio": "Lam is a Full Stack Web Developer originally from China and born and raised in Vietnam. His love for technology started with video games as a kid, which sparked his curiosity to learn how things work. He enjoys building both the front and back ends of web applications, with a special focus on creating clean and efficient back-end systems. Outside of tech, Lam likes going to the gym, playing sports like soccer and basketball, and spending time outdoors hiking or camping. He also loves traveling, and one of his biggest dreams is to explore the world.",
+        "avatar": "lam.jpg",
+        "linkedin": "https://www.linkedin.com/in/tuoclamthai/",
+        "github": "https://github.com/Lam-Thai"
     }
 ]
