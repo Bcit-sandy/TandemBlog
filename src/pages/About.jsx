@@ -45,15 +45,23 @@ const About = () => {
         <div className='about'>
             <header className='about-header'>
                 <div className='header-content'>
-                    <h1>About Us</h1>
-                    <img
-                        className='group-image'
-                        src='/Team/group.jpg'
-                        alt='Group image'
-                    />
-                    <p>
-                        We know that balancing demanding trade work with childcare isn't easy — many of us have experienced that struggle firsthand or witnessed it in our communities. That's why we built Tandem. As a team of designers and developers, we came together with one goal: to ease the pressure parents feel and provide meaningful, practical support. Through an easy-to-use, AI-driven platform, we help parents navigate schedules, find resources, and bring a sense of balance back into work and family life.
-                    </p>
+                    <div className='about-copy'>
+                        <p className='eyebrow'>Inside Tandem</p>
+                        <h1>About Us</h1>
+                        <p>
+                            We know that balancing trade work with childcare isn't easy. Many of us have lived that tension or watched it play out in our crews. We created Tandem to ease the pressure, offering thoughtful tools and trustworthy care partners.
+                        </p>
+                        <p>
+                            Every story we tell and product we ship is built by designers, engineers, and parents working side by side. We listen closely, iterate fast, and center the people juggling it all.
+                        </p>
+                    </div>
+                    <div className='about-visual'>
+                        <img
+                            className='group-image'
+                            src='/Team/group.jpg'
+                            alt='Tandem team'
+                        />
+                    </div>
                 </div>
             </header>
 

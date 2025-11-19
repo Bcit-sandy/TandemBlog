@@ -7,14 +7,12 @@
 .blog-container {
     max-width: 1400px;
     width: 100%;
-    margin: 15vh auto;
+    margin: 12vh auto;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
-    background: var(--white);
-    border-radius: 30px;
-    border: 3px solid var(--black);
     box-sizing: border-box;
+
 }
 
 .blog-header {
@@ -64,7 +62,7 @@
     box-shadow: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border: 2px solid var(--black);
+    border: 2px solid rgba(0, 0, 0, 0.3);
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -154,24 +152,6 @@
 }
 
 /* Avatar placeholder */
-.post-meta::before {
-    content: "";
-    position: absolute;
-    top: 1.5rem;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: #e0e0e0;
-    display: block;
-    flex-shrink: 0;
-}
-
-/* Dark cards avatar */
-.post-item:nth-child(even) .post-meta::before {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
 .post-item:nth-child(even) .post-meta {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -179,9 +159,9 @@
 .post-meta-info {
     display: flex;
     align-items: center;
-    margin-bottom: 0.8rem;
-    padding-left: 42px;
-    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding-left: 10px;
+    gap: 1rem;
 }
 
 .post-meta-info .date {
@@ -191,7 +171,7 @@
 .post-meta .author {
     color: var(--black);
     font-weight: 600;
-    margin-right: 0.75rem;
+    font-size: 0.9rem;
 }
 
 /* Dark cards author */

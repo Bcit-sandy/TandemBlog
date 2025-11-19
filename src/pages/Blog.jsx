@@ -19,7 +19,7 @@ const Blog = () => {
     <div className="blog">
       <div className="blog-container">
         <header className="blog-header">
-          <h1>Explore our Blog!</h1>
+          <h1>Weekly Update Blogs</h1>
           <p>Follow along with our latest posts and insights</p>
         </header>
         

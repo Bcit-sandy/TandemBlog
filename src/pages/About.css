@@ -20,28 +20,54 @@
 }
 
 .header-content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    text-align: center;
+}
+
+.about-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-copy .eyebrow {
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.about-copy h1 {
+    margin: 0;
+}
+
+.about-copy p {
+    margin: 0;
+}
+
+.about-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .group-image {
-    width: 80%;
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
     height: auto;
     border-radius: 20px;
-    margin: 4rem 0;
-    object-fit: contain;
+    margin-top: 10rem; 
 }
-
+        
 .about-header h1 {
     font-size: 3.5rem;
     color: var(--white);
-    margin-bottom: 0;    font-weight: 900;
-    text-align: center;
+    font-weight: 900;
 }
 
 .about-header p {
@@ -52,6 +78,30 @@
     margin-bottom: 0;
     max-width: 1000px;
     text-align: left;
+}
+
+.team-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.85;
 }
 
 .about-content {
@@ -231,8 +281,8 @@
 /* Navigation buttons */
 .carousel-nav-btn {
     position: absolute;
-    width: 42px;
-    height: 58px;
+    width: 64px;
+    height: 64px;
     background: var(--primary-blue-active);
     border: none;
     border-radius: 50%;
@@ -312,12 +362,12 @@
 /* Team member details */
 .team-member-details {
     text-align: center;
-    max-width: 800px;
-    margin: 0.5rem auto 0 auto;
+    margin: 0 auto;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 300px;
+    min-height: 200px;
     animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
 }
 
@@ -446,12 +496,33 @@
     }
 
     .about-header h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     .about-content {
         width: calc(100% - 60px);
         padding: 50px 30px;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-copy {
+        align-items: center;
+    }
+
+    .about-copy p {
+        text-align: center;
+    }
+
+    .about-visual {
+        margin-top: 1rem;
+    }
+
+    .group-image {
+        margin-top: 2rem;
     }
 
     .team-card {
@@ -496,6 +567,11 @@
         justify-content: center;
     }
 
+    .header-content {
+        display: flex;
+        flex-direction: column;
+    }
+
     .team {
         width: 100%;
         max-width: 100%;
@@ -535,14 +611,25 @@
 
     .header-content {
         max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-copy {
+        align-items: center;
+    }
+
+    .about-copy p {
+        text-align: center;
     }
 
     .group-image {
-        width: 60%;
+        width: 80%;
         max-width: 100%;
         height: auto;
         border-radius: 20px;
-        margin: 1.5rem 0;
+        margin: 1.5rem auto 0 auto;
     }
 
     .about-header h1 {
