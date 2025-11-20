@@ -1,16 +1,29 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import TandemLogo from "/Tandem.png";
 
 const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 10);
+        };
+
+        handleScroll();
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <nav className='navbar'>
+        <nav className={`navbar${isScrolled ? " scrolled" : ""}`}>
             <div className='nav-container'>
                 <NavLink
                     to='/'
                     className='nav-logo'
                 >
-                    LOGO
-                    {/*remeber to put the logo in the public folder, import it, and use <img src={logo} alt="logo" /> */}
+                    <img src={TandemLogo} alt="logo" /> 
                 </NavLink>
 
                 <ul className='nav-menu'>

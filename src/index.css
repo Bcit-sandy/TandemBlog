@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
 :root {
     /* Typography & base */
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: "Alan Sans", sans-serif;
     line-height: 1.5;
     font-weight: 400;
     color-scheme: light dark;
