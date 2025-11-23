@@ -8,7 +8,7 @@
 .about-header {
     background: var(--linear-gradient);
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     color: var(--white);
     padding: 6rem 4rem;
     margin-bottom: 0;
@@ -39,14 +39,20 @@
     text-transform: uppercase;
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.8);
+    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+    opacity: 0;
 }
 
 .about-copy h1 {
     margin: 0;
+    animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+    opacity: 0;
 }
 
 .about-copy p {
     margin: 0;
+    animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+    opacity: 0;
 }
 
 .about-visual {
@@ -54,6 +60,8 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
+    opacity: 0;
 }
 
 .group-image {
@@ -61,7 +69,9 @@
     max-width: 600px;
     height: auto;
     border-radius: 20px;
-    margin-top: 10rem; 
+    margin-top: 10rem;
+    animation: imageFadeInScale 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.5s both;
+    opacity: 0;
 }
 
 .about-header h1 {
@@ -76,6 +86,7 @@
     line-height: 1.5;
     margin-top: 2rem;
     margin-bottom: 0;
+    margin-right: 2rem;
     max-width: 1000px;
     text-align: left;
 }
@@ -481,6 +492,39 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes imageFadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
     }
 }
 
