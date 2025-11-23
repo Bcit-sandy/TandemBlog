@@ -204,10 +204,9 @@ const About = () => {
                         </div>
                     </section>
 
-                    {/* All team members column for mobile */}
+                    {/* All team members column for mobile - starts with index 0 */}
                     <div className='team-members-column'>
                         {team.map((member, index) => {
-                            if (index === currentIndex) return null; // Skip current member as it's already shown
                             return (
                                 <div key={index} className='team-member-card-mobile'>
                                     <div className='member-image-placeholder-mobile'>

@@ -796,25 +796,37 @@
 
 @media (max-width: 480px) {
     .about-header {
-        padding: 3rem 1.5rem;
+        padding: 8rem 1rem;
         min-height: auto;
     }
 
     .header-content {
         max-width: 100%;
         gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .about-copy {
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .about-copy .eyebrow {
+        font-size: 0.85rem;
+        letter-spacing: 0.25em;
     }
 
     .group-image {
-        width: 90%;
+        width: 100%;
         max-width: 100%;
         height: auto;
         border-radius: 20px;
-        margin: 1.25rem auto 0 auto;
+        margin: 1.5rem auto 0 auto;
     }
 
     .about-header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .about-header p {
@@ -822,6 +834,12 @@
         line-height: 1.6;
         max-width: 100%;
         text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .about-copy p {
+        margin-top: 0.75rem;
     }
 
     .about-content {
@@ -912,12 +930,10 @@
         display: none;
     }
 
+    /* Hide current member carousel and details on mobile - use column instead */
+    .team-carousel,
     .team-member-details {
-        margin: 0 auto;
-        margin-top: -1rem;
-        min-height: 200px;
-        padding: 0.5rem 0.5rem 1rem 0.5rem;
-        animation: fadeInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
+        display: none;
     }
 
     .member-name {
