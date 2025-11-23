@@ -43,26 +43,16 @@ const Home = () => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("visible");
-                        observer.unobserve(entry.target);
                     }
                 });
             },
             {
-                threshold: 0.1, // Trigger when 10% of the section is visible
-                rootMargin: "0px 0px -50px 0px", // Trigger slightly before it enters viewport
+                threshold: 0.2, // Trigger when 20% of the section is visible
             }
         );
 
         if (featuredPostsRef.current) {
-            // Check if already visible on mount
-            const rect = featuredPostsRef.current.getBoundingClientRect();
-            const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-            
-            if (isVisible) {
-                featuredPostsRef.current.classList.add("visible");
-            } else {
-                observer.observe(featuredPostsRef.current);
-            }
+            observer.observe(featuredPostsRef.current);
         }
 
         return () => {

@@ -185,7 +185,6 @@
     gap: 20px;
     box-sizing: border-box;
     padding: 0 5px;
-
 }
 
 .our-features {
@@ -301,7 +300,7 @@
     height: auto;
 }
 
-/* Featured Posts Section - Right Column */
+/* Featured Posts Section */
 .featured-posts {
     width: 100%;
     background: linear-gradient(90deg, rgba(84, 163, 254, 0.485), rgba(207, 255, 207, 0.621), rgba(149, 225, 255, 0.539));
@@ -367,7 +366,6 @@
         filter: blur(0);
     }
 }
-
 
 .posts-grid {
     max-width: 900px;
@@ -521,7 +519,90 @@
     font-size: 1rem;
 }
 
-/* Responsive Design */
+/* Contact Form Section */
+.contact-form-section {
+    max-width: 1400px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-form-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1rem;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 4rem;
+}
+
+.contact-form-text .contact-form-title {
+    font-size: 3rem !important;
+    color: var(--primary-blue-active);
+    text-align: left;
+}
+
+.contact-form-text .contact-form-subtitle {
+    color: #666;
+    font-size: 1.3rem !important;
+    margin: 0;
+    text-align: left;
+}
+
+.contact-form-text img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0;
+    border-radius: 10px;
+    object-fit: contain;
+    display: block;
+}
+
+.contact-form-wrapper {
+    width: 100%;
+}
+
+.contact-form-social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.contact-form-social-media a {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-form-social-media a p {
+    color: var(--primary-blue-active);
+    font-size: 1.1rem;
+}
+
+.contact-form-social-media img {
+    width: 60px;
+    height: 60px;
+}
+
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
+
+/* 1024px and below */
 @media (max-width: 1024px) {
     .featured-posts {
         width: 100%;
@@ -537,15 +618,32 @@
     .our-features {
         padding: 0 1rem;
     }
+
+    .contact-form-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form-text {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .contact-form-text img {
+        max-width: 250px;
+        margin: 1rem auto 0 auto;
+    }
 }
 
+/* 768px and below */
 @media (max-width: 768px) {
     .hero {
         min-height: 70vh;
-        padding: 50px 0 30px 0;
+        padding: 0 2px 50px 2px;
         flex-direction: column;
         gap: 2rem;
     }
+
     .wave-svg {
         display: none;
     }
@@ -554,17 +652,22 @@
         top: 0;
         margin: 0 auto;
         text-align: center;
-        padding: 0 12px;
+        padding: 0 40px;
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
+
+    }
+    .hero-content h2 {
+        font-size:1.71rem;
+        margin-bottom: 2rem;
     }
 
     .hero-content p {
         font-size: 1.1rem;
         width: 100%;
-        margin-top: 1rem;
+        line-height: 1.5;
     }
 
     .hero-image-placeholder {
@@ -586,6 +689,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 4rem;
     }
 
     .featured-posts {
@@ -593,7 +697,6 @@
         max-width: 100%;
         margin: 0 auto;
         padding: 40px 20px;
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -624,8 +727,65 @@
     .features-grid {
         grid-template-columns: 1fr;
     }
+
+    .contact-form-section {
+        padding: 0 1rem;
+        margin: 3rem auto;
+    }
+
+    .contact-form-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form-text {
+        text-align: center;
+        padding-top: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .contact-form-text .contact-form-title {
+        font-size: 2.3rem !important;
+        text-align: center;
+    }
+
+    .contact-form-text .contact-form-subtitle {
+        font-size: 1.05rem !important;
+        text-align: center;
+    }
+
+    .contact-form-text img {
+        max-width: 400px;
+        margin: 0 auto 0 auto;
+    }
+
+    .contact-form-social-media {
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-form-social-media a {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        justify-content: center;
+    }
+
+    .contact-form-social-media img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-form-social-media a p {
+        font-size: 1rem;
+        margin-bottom: 0.1rem;
+        margin-right: 0.5rem;
+    }
+    
 }
 
+/* 480px and below */
 @media (max-width: 480px) {
     .hero {
         padding: 40px 15px;
@@ -672,131 +832,40 @@
     .featured-posts h2 {
         font-size: 1.8rem;
     }
-}
 
-/* Contact Form Section */
-.contact-form-section {
-    max-width: 1400px;
-    margin: 4rem auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-form-content {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    align-items: start;
-    width: 100%;
-    max-width: 100%;
-}
-
-.contact-form-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 1rem;
-    text-align: left;
-    align-items: flex-start;
-    margin-left: 4rem;
-}
-
-.contact-form-text .contact-form-title {
-    font-size: 3rem !important;
-    color: var(--primary-blue-active);
-    text-align: left;
-}
-
-.contact-form-text .contact-form-subtitle {
-    color: #666;
-    font-size: 1.3rem !important;
-    margin: 0;
-    text-align: left;
-}
-
-.contact-form-text img {
-    width: 100%;
-    max-width: 4000px;
-    height: auto;
-    margin: 0;
-    border-radius: 10px;
-    object-fit: contain;
-}
-
-.contact-form-wrapper {
-    width: 100%;
-}
-
-.contact-form-social-media {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: flex-start;
-}
-
-.contact-form-social-media a {
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
-    text-decoration: none;
-}
-
-
-.contact-form-social-media a p {
-    color: var(--primary-blue-active);
-    font-size: 1.1rem;
-}
-
-.contact-form-social-media img {
-    width: 60px;
-    height: 60px;
-
-}
-
-/* Responsive Design for Contact Form */
-@media (max-width: 1024px) {
-    .contact-form-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .contact-form-text {
-        text-align: center;
-        padding-top: 0;
-    }
-
-    .contact-form-text img {
-        max-width: 250px;
-        margin: 1rem auto 0 auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .contact-form-section {
-        padding: 0 1rem;
-        margin: 3rem auto;
-    }
-
-    .contact-form-title {
-        font-size: 3.5rem;
-    }
-
-    .contact-form-subtitle {
-        font-size: 1.75rem;
-    }
-}
-
-@media (max-width: 480px) {
     .contact-form-section {
         margin: 2rem auto;
+        padding: 0 0.75rem;
     }
 
-    .contact-form-title {
-        font-size: 2.5rem;
+    .contact-form-text .contact-form-title {
+        font-size: 1.8rem !important;
     }
 
-    .contact-form-subtitle {
-        font-size: 1.25rem;
+    .contact-form-text .contact-form-subtitle {
+        font-size: 1rem !important;
+    }
+
+    .contact-form-social-media {
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .contact-form-social-media a {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        justify-content: center;
+    }
+
+    .contact-form-social-media img {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .contact-form-social-media a p {
+        font-size: 0.9rem;
+        margin: 0;
     }
 }
