@@ -203,6 +203,66 @@ const About = () => {
                             )}
                         </div>
                     </section>
+
+                    {/* All team members column for mobile - starts with index 0 */}
+                    <div className='team-members-column'>
+                        {team.map((member, index) => {
+                            return (
+                                <div key={index} className='team-member-card-mobile'>
+                                    <div className='member-image-placeholder-mobile'>
+                                        <img
+                                            src={`/Team/${member.avatar}`}
+                                            alt={member.name}
+                                        />
+                                        <div className='member-overlay-mobile'>
+                                            <h3 className='member-name-overlay-mobile'>{member.name}</h3>
+                                            <p className='member-role-overlay-mobile'>
+                                                {member.role || "Tandem staff"}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <section className='team-member-details-mobile'>
+                                        <p className='member-bio-mobile'>
+                                            {member.bio ||
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."}
+                                        </p>
+                                        <div className='social-links-mobile'>
+                                            {member.linkedin && (
+                                                <a
+                                                    href={member.linkedin}
+                                                    target='_blank'
+                                                    rel='noopener noreferrer'
+                                                    aria-label={`${member.name}'s LinkedIn`}
+                                                    className='social-link'
+                                                >
+                                                    <img
+                                                        className='contact-icon'
+                                                        src='/Team/linkedIn.png'
+                                                        alt='LinkedIn'
+                                                    />
+                                                </a>
+                                            )}
+                                            {member.github && (
+                                                <a
+                                                    href={member.github}
+                                                    target='_blank'
+                                                    rel='noopener noreferrer'
+                                                    aria-label={`${member.name}'s GitHub`}
+                                                    className='social-link'
+                                                >
+                                                    <img
+                                                        className='contact-icon'
+                                                        src='/Team/github.png'
+                                                        alt='GitHub'
+                                                    />
+                                                </a>
+                                            )}
+                                        </div>
+                                    </section>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </section>
         </div>

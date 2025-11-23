@@ -1,10 +1,18 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Home.css";
-import Blog from "./Blog";
+import ContactForm from "../components/ContactForm/ContactForm";
+
+
+// SVG imports from public/Home folder
+const balanceSvg = "/Home/balance.svg";
+const supportSvg = "/Home/support.svg";
+const trustSvg = "/Home/trust.svg";
+const questionImg = "/Home/question.png";
+const igpng = "/Home/ig.png";
+const emailpng = "/Home/email.png";
 
 const Home = () => {
-    const missionRef = useRef(null);
-
+    const featuredPostsRef = useRef(null);
     const featureHighlights = [
         {
             title: "Supportive scheduling",
@@ -29,21 +37,39 @@ const Home = () => {
         }
     ];
 
-    const scrollToMission = () => {
-        missionRef.current?.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-        });
-    };
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            },
+            {
+                threshold: 0.2, // Trigger when 20% of the section is visible
+            }
+        );
+
+        if (featuredPostsRef.current) {
+            observer.observe(featuredPostsRef.current);
+        }
+
+        return () => {
+            if (featuredPostsRef.current) {
+                observer.unobserve(featuredPostsRef.current);
+            }
+        };
+    }, []);
 
     return (
         <div className='home'>
             <section className='hero'>
                 <div className='hero-content'>
                     <h1>
-                        Welcome to <span className='tandem-animated'>Tandem</span>!
+                        Welcome to <span className='tandem-animated'>Tandem</span>
                     </h1>
-                    <h2>Your childcare partner that balances your work-life schedule</h2>
+                    <h2>Bridging the gap between work and childcare</h2>
                     <p>Tandem is an app for parents in the trades that helps balance work and childcare. It utilizes AI to support busy parents in managing their responsibilities, providing trustworthy recommendations and reliable childcare options. It allows parents to find childcare easily, reducing stress and improving work–life balance.</p>
                     <a
                         className='learn-more-btn'
@@ -56,9 +82,11 @@ const Home = () => {
                 </div>
                 
                 <div className='hero-image-placeholder'>
-                    <span>Product preview coming soon</span>
+                    <img 
+                        src='/MockUp/MockUp5.png' 
+                        alt='Tandem app mockup' 
+                    />
                 </div>
-            {/* will be a screen mock up of the app, using the image from the public folder */}
            
 
                 <div className='wave-svg'>
@@ -76,28 +104,13 @@ const Home = () => {
             </section>
 
             <div className='mission-feature'>
-                {/* <section
-                    className='our-mission'
-                    id='our-mission'
-                    ref={missionRef}
-                >
-                    <div className='mission-content'>
-                        <h1>
-                            What is
-                            <span className='tandem-highlight'>Tandem</span> ?
-                        </h1>
-                        <p>
-                            Tandem is an app for parents in trades to help balance work with childcare. It utilizes AI to help busy parents balance the responsibilities of work and childcare, providing trustworthy recommendations and supportive childcare. It allows parents in the trades to find childcare easily, reducing stress and improving work-life balance. 
-                        </p>
-                    </div>
-                </section> */}
-
                 <section className='our-features'>
                     <div className='features-intro'>
                         <h2>Our Key Features</h2>
                         <p className='eyebrow'>Built for busy trade parents</p>
                         <p>
-                            Each feature in Tandem is designed to lift some weight off parents in the trades. We believe that every parent should have the support they need to balance work and family life.
+                            Each feature in Tandem is designed to lift some weight off parents in the trades. <br />
+                            We believe that every parent should have the support they need to balance work and family life.
                         </p>
                     </div>
 
@@ -122,30 +135,57 @@ const Home = () => {
                     </div>
                 </section>
 
-                <section className='featured-posts'>
-                    <h2>What we value</h2>
+                <section className='featured-posts' ref={featuredPostsRef}>
+                    <h2>Why Tandem?</h2>
 
                     <div className='posts-grid'>
                         <article className='post-card'>
-                            <h3>Trustworthy</h3>
-                            <p>Schedules are unpredictable. Instead of a world where childcare feels overwhelming and inconsistent, Tandem offers one that's stable and reliable. </p>
+                            <img src={trustSvg} alt="Trust" />
+                            <h3>Trust</h3>
+                            <p>Parents want what’s best for their kids, with safety being a top priority. When it comes to personal information, we make sure to provide the best security we can. </p>
                         </article>
 
                         <article className='post-card'>
-                            <h3>Balanced</h3>
-                            <p>Work and family should work in Tandem. Parenthood is already life-changing, and we want to make balancing it with work less stressful.</p>
+                            <img src={balanceSvg} alt="Balance" />
+                            <h3>Balance</h3>
+                            <p>Life is all about balance. With how life-changing parenthood is, we want to help schedules work in tandem for a happier you.</p>
                         </article>
 
                         <article className='post-card'>
-                            <h3>Supportive</h3>
-                            <p>Childcare can be a lonely and confusing. We aims to bring trade parents together so that their schedules can work in Tandem.  </p>
+                           <img src={supportSvg} alt="Support" /> 
+                           <h3>Support</h3>
+                           <p>Work can be unpredictable. In a world where childcare feels stressful and overwhelming, we strive to change that. </p>
                         </article>
                     </div>
                 </section>
+
+
             </div>
 
-            <section>
-                <Blog />
+            <section className='contact-form-section'>
+                <div className="contact-form-content">
+                    <div className="contact-form-text">
+                        <h2 className="contact-form-title">Get in Touch</h2>
+                        <p className="contact-form-subtitle">
+                            Any question or feedback? Send us a message!
+                        </p>
+                        <img src={questionImg} alt="Question" />
+                        <div className="contact-form-social-media">
+                            <a href="https://www.instagram.com/the.tandem.app?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                                <img src={igpng} alt="Instagram" />
+                                <p> the.tandem.app </p>
+                            </a>
+                            <a href="mailto:tandemfortrades@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <img src={emailpng} alt="Email" />
+                                <p> tandemfortrades@gmail.com </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="contact-form-wrapper">
+                        <ContactForm />
+                    </div>
+
+                </div>
             </section>
         </div>
     );
