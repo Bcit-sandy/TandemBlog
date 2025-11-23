@@ -258,7 +258,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    background: rgba(51, 115, 204, 0.08);
+    background: transparent;
 }
 
 .feature-card h3 {
@@ -275,11 +275,11 @@
 }
 
 .feature-card.accent-two .feature-icon {
-    background: rgba(146, 241, 137, 0.2);
+    background: transparent;
 }
 
 .feature-card.accent-three .feature-icon {
-    background: rgba(104, 213, 255, 0.2);
+    background: transparent;
 }
 
 /* Wave SVG */
