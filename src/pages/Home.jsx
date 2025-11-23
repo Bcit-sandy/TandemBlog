@@ -171,15 +171,15 @@ const Home = () => {
                         </p>
                         <img src={questionImg} alt="Question" />
                         <div className="contact-form-social-media">
-                        <a href="https://www.instagram.com/the.tandem.app?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
-                            <img src={igpng} alt="Instagram" />
-                            <p> the.tandem.app </p>
-                        </a>
-                        <a href="mailto:tandemfortrades@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <img src={emailpng} alt="Email" />
-                            <p> tandemfortrades@gmail.com </p>
-                        </a>
-                    </div>
+                            <a href="https://www.instagram.com/the.tandem.app?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                                <img src={igpng} alt="Instagram" />
+                                <p> the.tandem.app </p>
+                            </a>
+                            <a href="mailto:tandemfortrades@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <img src={emailpng} alt="Email" />
+                                <p> tandemfortrades@gmail.com </p>
+                            </a>
+                        </div>
                     </div>
                     <div className="contact-form-wrapper">
                         <ContactForm />
