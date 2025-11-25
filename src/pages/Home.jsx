@@ -15,24 +15,24 @@ const Home = () => {
     const featuredPostsRef = useRef(null);
     const featureHighlights = [
         {
-            title: "Supportive scheduling",
+            title: "AI Powered Scheduling",
             description:
-                "Our gentle AI helps you carve out breathing room, flexing around overtime, school events, and the moments you want to be totally present.",
+                "Our gentle AI helps you organize your childcare effectively. With overtime or school events, you can be present when it matters most.",
             icon: "🗓️",
             accent: "accent-one"
         },
         {
-            title: "Trust-first matches",
+            title: "Seamless Nanny Booking",
             description:
-                "See dependable caregivers with real notes from other trades parents, so every booking feels like leaving your kids with family.",
+                "With our partner of dependable caregivers, you’re in great hands! With notes from other trades parents, every booking feels like family.",
             icon: "🤝",
             accent: "accent-two"
         },
         {
-            title: "Community nanny sharing",
+            title: "Secure Nanny Sharing",
             description:
-                "Team up with nearby crews to split costs, share familiar faces, and build a support circle that understands long shifts.",
-            icon: "🌟",
+                "Team up with nearby crews to split costs, see familiar faces, and build a support circle that knows you best.",
+            icon: "🧸",
             accent: "accent-three"
         }
     ];

@@ -23,37 +23,66 @@ const BlogPost = () => {
         navigate("/blog");
     };
 
-    // Function to parse content into headers and paragraphs
+    // Function to parse content into headers, paragraphs, and images
     const renderContent = (content) => {
         if (!content) return null;
-        const lines = content.split("\n").filter((line) => line.trim() !== "");
+        const lines = content.split("\n");
         return lines.map((line, index) => {
-            if (line.startsWith("## ")) {
+            const trimmedLine = line.trim();
+            
+            // Skip empty lines
+            if (trimmedLine === "") {
+                return null;
+            }
+            
+            // Check for image syntax: [IMAGE:image.png] or [IMAGE:image.png|alt text]
+            const imageMatch = trimmedLine.match(/\[IMAGE:([^\]]+)\]/);
+            if (imageMatch) {
+                const imageData = imageMatch[1].split("|");
+                const imagePath = imageData[0].trim();
+                const altText = imageData[1] ? imageData[1].trim() : "Blog post image";
+                return (
+                    <div key={index} className="post-content-image-wrapper">
+                        <img
+                            className="post-content-image"
+                            src={`/Blog/${imagePath}`}
+                            alt={altText}
+                        />
+                    </div>
+                );
+            }
+            
+            // Check for headers
+            if (trimmedLine.startsWith("## ")) {
                 return (
                     <h2
                         key={index}
                         className="post-content-header">
-                        {line.replace("## ", "")}
+                        {trimmedLine.replace("## ", "")}
                     </h2>
                 );
-            } else if (line.startsWith("- ")) {
+            } 
+            // Check for list items
+            else if (trimmedLine.startsWith("- ")) {
                 return (
                     <p
                         key={index}
                         className="post-content-item">
-                        {line.replace("- ", "")}
+                        {trimmedLine.replace("- ", "")}
                     </p>
                 );
-            } else {
+            } 
+            // Regular paragraphs
+            else {
                 return (
                     <p
                         key={index}
                         className="post-content-paragraph">
-                        {line}
+                        {trimmedLine}
                     </p>
                 );
             }
-        });
+        }).filter(item => item !== null);
     };
 
     if (loading) {
