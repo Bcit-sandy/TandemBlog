@@ -64,9 +64,20 @@
         "image": "week11.png",
         "title": "Week 11: Work, Work, Work!",
         "excerpt": "Where hard work and dedication shines.",
-        "content": "Nothing yet.",
+        "content": " Introduction\n\n This week was spent indoors for D3, which meant the teams didn’t get to see each other. We didn’t let that hinder us though, as we all hunkered down and kept working away. The dev team spent their time focused on the schedule part of the app, since it’s a core part of it. The D3 team spent their time working on the print materials while starting the user testing process. Design Team\n- Editing + Revisions\n- Video: The D3 team has compiled the clips recorder last week and organized them, having them ready to edit.\n- Print materials: The team has continued to work on the materials, sharing design progress and gathering feedback as they go.\n- User testing: The team conducted their user testing this week, gathering feedback to better align the app with their audience.\n\nDev Team:\n- Reviews and schedule deep dive\n- Schedule feature: The dev team gave the schedule feature their full attention, making sure no stone was left unturned when fleshing it out.\n- Review: They continue to review each other's code and test the app’s functionality to make sure everything’s in working order.\n\nTeam moment: Emoji Madness\nExhausted from yet another week of work, the team needed a slight pick me up, a morale boost. We realized how many odd and off putting photos we had of each other, and soon enough our Discord server was filled with custom made emojis of each team member. They’re now a staple in every message sent, and they’re quite the pick me up. Even through the most complex of tasks, everyone can take a moment and laugh at the silly emojis we’ve made. \n\nLooking Ahead: Week 12As we continue to work on stuff, for week 12 we plan to finish our print materials and start editing our clips for the video, also finding audio to use. We also plan to help guide each other as the D3 start their frontend coding.",
         "author": "Thea Calaquian",
-        "date": "November 10th, 2025",
+        "date": "November 17th, 2025",
         "category": ["Week 11", "Blog Post"]
+    },
+    {
+        "id": 12,
+        "image": "week11.png",
+        "title": "Week 12: Marketing? Design? Coding? Oh my!",
+        "excerpt": "Where hard work, design, and coding come together.",
+        "content": "Introduction\n\n It’s been a busy week back on campus, with the pressure building as we near the end. The D3 team continued on with the print materials and video editing, while also starting their part of the code. The dev team has continued to work on the backend, ironing out any issues that arise while guiding D3 when questions come up.\n\nDesign Team\nExtra materials + Code\nPrint materials: The team completed the business cards, stickers, and brochure in time to be printed! We also made plans for extra materials to use on the big day.\nCoding: The team has gone head-first into coding this week. With the frontend parts assigned, everyone has set up their branch to get to work.\nVideo editing: With the clips recorded from last week, the promotional video is now in the works of being edited!\n\nDev Team:\nMore team reviews + meetings\nMeetings: The devs spent hours in meetings (one even being 6-7hours long ☠️) fleshing out the logic behind all our functions, guaranteeing things would run smoothly.\nGuidance: The dev team has helped the D3 side in setting up their coding work, answering any questions we may have as we learn a new build.\nBug fixing: They went through the current app flows and fixed any issues that popped up, while also continuing work on the core functionality. \n\nTeam moment: Impromptu outing!\nAs we prepared for our presentations coming up, we agreed on our uniforms so we’d all match. We decided last minute to make it into a mini group outing to all buy the matching shirts we wanted. While no one could stay for long after, it was still nice to be able to do something spontaneous together, even if still for the project.😅 Looking Ahead: Week 13\n As we head into week 13, we are preparing our presentation materials for our mock on Wednesday, while also continuing to code and create our extra promotional materials in time for the real deal 2 weeks away. We are also preparing the video in hopes it will be done within this next week!",
+
+        "author": "Thea Calaquian",
+        "date": "November 24th, 2025",
+        "category": ["Week 12", "Blog Post"]
     }
 ]
