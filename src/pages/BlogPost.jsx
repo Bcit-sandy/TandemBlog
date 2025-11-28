@@ -27,12 +27,50 @@ const BlogPost = () => {
     const renderContent = (content) => {
         if (!content) return null;
         const lines = content.split("\n");
-        return lines.map((line, index) => {
+        const elements = [];
+        let imageGroup = [];
+        let elementIndex = 0;
+
+        const processImageGroup = () => {
+            if (imageGroup.length > 0) {
+                if (imageGroup.length > 1) {
+                    // Multiple images - render in grid
+                    elements.push(
+                        <div key={`image-group-${elementIndex}`} className="post-content-images-grid">
+                            {imageGroup.map((img, idx) => (
+                                <div key={idx} className="post-content-image-wrapper">
+                                    <img
+                                        className="post-content-image"
+                                        src={img.path}
+                                        alt={img.alt}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    );
+                } else {
+                    // Single image - render normally
+                    elements.push(
+                        <div key={`image-${elementIndex}`} className="post-content-image-wrapper">
+                            <img
+                                className="post-content-image"
+                                src={imageGroup[0].path}
+                                alt={imageGroup[0].alt}
+                            />
+                        </div>
+                    );
+                }
+                imageGroup = [];
+                elementIndex++;
+            }
+        };
+
+        lines.forEach((line, index) => {
             const trimmedLine = line.trim();
             
             // Skip empty lines
             if (trimmedLine === "") {
-                return null;
+                return;
             }
             
             // Check for image syntax: [IMAGE:image.png] or [IMAGE:image.png|alt text]
@@ -40,49 +78,58 @@ const BlogPost = () => {
             if (imageMatch) {
                 const imageData = imageMatch[1].split("|");
                 const imagePath = imageData[0].trim();
+                const normalizedPath = imagePath.startsWith("/")
+                    ? imagePath
+                    : imagePath.includes("/")
+                        ? `/${imagePath}`
+                        : `/Blog/${imagePath}`;
                 const altText = imageData[1] ? imageData[1].trim() : "Blog post image";
-                return (
-                    <div key={index} className="post-content-image-wrapper">
-                        <img
-                            className="post-content-image"
-                            src={`/Blog/${imagePath}`}
-                            alt={altText}
-                        />
-                    </div>
-                );
+                imageGroup.push({ path: normalizedPath, alt: altText });
+                return;
             }
+            
+            // If we hit a non-image line and have images in the group, process them first
+            processImageGroup();
             
             // Check for headers
             if (trimmedLine.startsWith("## ")) {
-                return (
+                elements.push(
                     <h2
-                        key={index}
+                        key={elementIndex}
                         className="post-content-header">
                         {trimmedLine.replace("## ", "")}
                     </h2>
                 );
+                elementIndex++;
             } 
             // Check for list items
             else if (trimmedLine.startsWith("- ")) {
-                return (
+                elements.push(
                     <p
-                        key={index}
+                        key={elementIndex}
                         className="post-content-item">
                         {trimmedLine.replace("- ", "")}
                     </p>
                 );
+                elementIndex++;
             } 
             // Regular paragraphs
             else {
-                return (
+                elements.push(
                     <p
-                        key={index}
+                        key={elementIndex}
                         className="post-content-paragraph">
                         {trimmedLine}
                     </p>
                 );
+                elementIndex++;
             }
-        }).filter(item => item !== null);
+        });
+
+        // Process any remaining image group at the end
+        processImageGroup();
+
+        return elements;
     };
 
     if (loading) {

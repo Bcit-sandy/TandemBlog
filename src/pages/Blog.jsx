@@ -8,7 +8,8 @@ const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    setPosts(postsData);
+    const sortedPosts = [...postsData].sort((a, b) => b.id - a.id);
+    setPosts(sortedPosts);
   }, []);
 
   const handlePostClick = (post) => {
