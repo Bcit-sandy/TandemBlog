@@ -56,13 +56,13 @@
 }
 
 .post-item {
-    background: var(--white);
+    background: var(--primary-blue-active);
     border-radius: 20px;
     padding: 0;
     box-shadow: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: none;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -70,10 +70,10 @@
     margin: 0 auto;
 }
 
-/* Alternate card styles - dark blue for every even card */
+/* Alternate card styles - light background for every even card */
 .post-item:nth-child(even) {
-    background: var(--primary-blue-active);
-    border: none;
+    background: var(--white);
+    border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 /* Arrow button removed from card - will be on title instead */
@@ -119,11 +119,11 @@
 }
 
 /* Dark cards text color */
-.post-item:nth-child(even) .post-info h3 {
+.post-item:nth-child(odd) .post-info h3 {
     color: white;
 }
 
-.post-item:nth-child(even) .post-info h3::after {
+.post-item:nth-child(odd) .post-info h3::after {
     background: var(--secondary-green-normal);
     color: var(--primary-blue-active);
 }
@@ -136,7 +136,7 @@
 }
 
 /* Dark cards text color */
-.post-item:nth-child(even) .post-info p {
+.post-item:nth-child(odd) .post-info p {
     color: white;
 }
 
@@ -152,7 +152,7 @@
 }
 
 /* Avatar placeholder */
-.post-item:nth-child(even) .post-meta {
+.post-item:nth-child(odd) .post-meta {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -175,7 +175,7 @@
 }
 
 /* Dark cards author */
-.post-item:nth-child(even) .post-meta .author {
+.post-item:nth-child(odd) .post-meta .author {
     color: white;
 }
 
@@ -184,7 +184,7 @@
 }
 
 /* Dark cards date */
-.post-item:nth-child(even) .post-meta .date {
+.post-item:nth-child(odd) .post-meta .date {
     color: white;
 }
 
@@ -204,7 +204,7 @@
 }
 
 /* Dark cards tags - white background with dark blue text */
-.post-item:nth-child(even) .post-meta .category {
+.post-item:nth-child(odd) .post-meta .category {
     background-color: white;
     color: var(--primary-blue-active);
 }

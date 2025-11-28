@@ -47,20 +47,20 @@ const About = () => {
                 <div className='header-content'>
                     <div className='about-copy'>
                         <p className='eyebrow'>Inside Tandem</p>
-                        <h1>About Us</h1>
-                        <p>
+                    <h1>About Us</h1>
+                    <p>
                             We know that balancing trade work with childcare isn't easy. Many of us have lived that tension or watched it play out in our crews. We created Tandem to ease the pressure, offering thoughtful tools and trustworthy care partners.
-                        </p>
+                    </p>
                         <p>
                             Every story we tell and product we ship is built by designers, engineers, and parents working side by side. We listen closely, iterate fast, and center the people juggling it all.
                         </p>
-                    </div>
+                </div>
                     <div className='about-visual'>
-                        <img
-                            className='group-image'
+                <img
+                    className='group-image'
                             src='/Team/group.jpg'
                             alt='Tandem team'
-                        />
+                />
                     </div>
                 </div>
             </header>
