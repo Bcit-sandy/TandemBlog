@@ -23,6 +23,30 @@ const BlogPost = () => {
         navigate("/blog");
     };
 
+    // Determine previous/next posts based on ID order
+    const sortedPostsAsc = [...posts].sort((a, b) => a.id - b.id);
+    const currentIndex = post ? sortedPostsAsc.findIndex((p) => p.id === post.id) : -1;
+
+    const prevPost = currentIndex > 0
+        ? sortedPostsAsc[currentIndex - 1]
+        : null;
+
+    const nextPost = currentIndex !== -1 && currentIndex < sortedPostsAsc.length - 1
+        ? sortedPostsAsc[currentIndex + 1]
+        : null;
+
+    const handlePreviousPost = () => {
+        if (prevPost) {
+            navigate(`/blog/${prevPost.id}`);
+        }
+    };
+
+    const handleNextPost = () => {
+        if (nextPost) {
+            navigate(`/blog/${nextPost.id}`);
+        }
+    };
+
     // Function to parse content into headers, paragraphs, and images
     const renderContent = (content) => {
         if (!content) return null;
@@ -33,10 +57,12 @@ const BlogPost = () => {
 
         const processImageGroup = () => {
             if (imageGroup.length > 0) {
-                if (imageGroup.length > 1) {
+                const groupSize = imageGroup.length;
+                if (groupSize > 1) {
                     // Multiple images - render in grid
+                    const gridClass = `post-content-images-grid count-${groupSize}`;
                     elements.push(
-                        <div key={`image-group-${elementIndex}`} className="post-content-images-grid">
+                        <div key={`image-group-${elementIndex}`} className={gridClass}>
                             {imageGroup.map((img, idx) => (
                                 <div key={idx} className="post-content-image-wrapper">
                                     <img
@@ -68,8 +94,9 @@ const BlogPost = () => {
         lines.forEach((line, index) => {
             const trimmedLine = line.trim();
             
-            // Skip empty lines
+            // Process image group if we hit an empty line
             if (trimmedLine === "") {
+                processImageGroup();
                 return;
             }
             
@@ -163,12 +190,6 @@ const BlogPost = () => {
     return (
         <div className="blog-post">
             <div className="blog-post-container">
-                <button
-                    className="back-button"
-                    onClick={handleBackToBlog}>
-                    ← Back to Blog
-                </button>
-
                 <article className="post-detail">
                     <header className="post-header">
                         <h1 className="post-title">{post.title}</h1>
@@ -201,6 +222,30 @@ const BlogPost = () => {
                         </div>
                     </footer>
                 </article>
+
+                <div className="post-nav">
+                    {prevPost && (
+                        <button
+                            className="back-button"
+                            onClick={handlePreviousPost}>
+                            ← Previous Post
+                        </button>
+                    )}
+
+                    <button
+                        className="back-button back-button-outline"
+                        onClick={handleBackToBlog}>
+                        Return to Blog
+                    </button>
+
+                    {nextPost && (
+                        <button
+                            className="back-button"
+                            onClick={handleNextPost}>
+                            Next Post →
+                        </button>
+                    )}
+                </div>
             </div>
         </div>
     );
