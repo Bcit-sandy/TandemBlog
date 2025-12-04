@@ -73,7 +73,7 @@ const Home = () => {
                     <p>Tandem is an app for parents in the trades that helps balance work and childcare. It utilizes AI to support busy parents in managing their responsibilities, providing trustworthy recommendations and reliable childcare options. It allows parents to find childcare easily, reducing stress and improving work–life balance.</p>
                     <a
                         className='learn-more-btn'
-                        href='https://tandem-git-dev-matheus-demeis-projects-4bff4ed5.vercel.app/'
+                        href='https://www.tandem-app.com/'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
